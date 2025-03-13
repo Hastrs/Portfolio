@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Elsayed | Web Developer</title>
+    <meta name="description" content="Portfolio of Hassan Elsayed, a professional Front-End Web Developer specializing in high-performance websites.">
+    <meta name="keywords" content="Web Developer, Front-End Developer, Hassan Elsayed, JavaScript, HTML, CSS">
+    <meta name="author" content="Hassan Elsayed">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Hassan</a>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello! This is</h3>
+            <h1>Hassan Elsayed</h1>
+            <h3>Passionate Web Developer</h3>
+            <p>I specialize in building high-performance, responsive websites that provide excellent user experiences.</p>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/eng-hassan" style="--i:7;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/hastrs" style="--i:8;" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:hastr.dev@gmail.com" style="--i:9;"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./imgs/about-img.webp" alt="About Image" loading="lazy">
+        </div>
+
+        <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+            <h2 class="heading">About Me</h2>
+            <p>I am Hassan Elsayed, a front-end web developer with a strong focus on creating responsive and visually appealing websites.</p>
+            <p>I have experience in HTML, CSS, and JavaScript, and I continuously strive to improve website performance and usability.</p>
+            <p>I enjoy turning ideas into reality by crafting clean and efficient code. Let's build something amazing together!</p>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/eng-hassan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/hastrs" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:hastr.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My Speciality</h2>
+        <p class="skills-description">Here are my key skills and expertise areas that I excel in.</p>
+
+        <div class="skill-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="skill-box">
+                <h3 class="skill-title">Web Development</h3>
+                <div class="skill-bar">
+                    <span class="skill-percent" data-percent="90%"></span>
+                    <span class="skill-percent-text">90%</span>
+                </div>
+
+                <h3 class="skill-title">UI/UX Design</h3>
+                <div class="skill-bar">
+                    <span class="skill-percent" data-percent="85%"></span>
+                    <span class="skill-percent-text">85%</span>
+                </div>
+
+                <h3 class="skill-title">JavaScript</h3>
+                <div class="skill-bar">
+                    <span class="skill-percent" data-percent="80%"></span>
+                    <span class="skill-percent-text">80%</span>
+                </div>
+
+                <h3 class="skill-title">Performance Optimization</h3>
+                <div class="skill-bar">
+                    <span class="skill-percent" data-percent="80%"></span>
+                    <span class="skill-percent-text">80%</span>
+                </div>
+
+                <h3 class="skill-title">SEO & Page Speed</h3>
+                <div class="skill-bar">
+                    <span class="skill-percent" data-percent="95%"></span>
+                    <span class="skill-percent-text">95%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="services-box" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>"I build fast, responsive, and modern websites tailored to your needs."</p>
+            </div>
+
+            <div class="services-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>"I create intuitive and engaging user interfaces that enhance user experience."</p>
+            </div>
+
+            <div class="services-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Website Optimization</h3>
+                <p>"I improve website speed, SEO, and performance for a better ranking and user engagement."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Portfolio</h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./imgs/Eco.webp" alt="EcoBloom Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>EcoBloom</h4>
+                    <p>"A landing page for eco-friendly products, optimized for performance and SEO."</p>
+                    <a href="https://hastrs.github.io/EcoBloom/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="./imgs/ServiTech.webp" alt="ServiTech Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>ServiTech</h4>
+                    <p>"A service page designed for tech-related businesses with a sleek and modern design."</p>
+                    <a href="https://hastrs.github.io/ServiTech/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <img src="./imgs/TechVision-2030.webp" alt="TechVision 2030 Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>TechVision 2030</h4>
+                    <p>"A landing page for an upcoming tech conference, featuring interactive elements."</p>
+                    <a href="https://hastrs.github.io/TechVision-2030/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <img src="./imgs/QRCodeGenerator.webp" alt="QR Code Generator Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>QR Code Generator</h4>
+                    <p>"A simple and effective tool to generate custom QR codes instantly."</p>
+                    <a href="https://hastrs.github.io/QRCodeGenerator/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <img src="./imgs/Savory-Haven.webp" alt="Savory Haven Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>Savory Haven</h4>
+                    <p>"A visually appealing restaurant landing page with a modern and elegant design."</p>
+                    <a href="https://hastrs.github.io/Savory-Haven/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="heading">Testimonials</h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-box" data-aos="fade-right" data-aos-duration="1000">
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Hassan did a fantastic job on my website! It loads fast and looks amazing."</p>
+                    <div class="testimonial-client">
+                        <img src="./imgs/Jane-Doe.webp" alt="Jane Doe" loading="lazy">
+                        <div class="client-info">
+                            <h5>Jane Doe</h5>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Highly professional and delivered beyond expectations. Will definitely work with him again!"</p>
+                    <div class="testimonial-client">
+                        <img src="./imgs/Michael-Carter.webp" alt="Michael Carter" loading="lazy">
+                        <div class="client-info">
+                            <h5>Michael Carter</h5>
+                            <p>Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <p>Let's work together! Feel free to reach out for project inquiries or collaborations.</p>
+
+        <div class="contact-info">
+            <div class="contact-info-item" data-aos="fade-up" data-aos-duration="1000">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:hastr.dev@gmail.com">hastr.dev@gmail.com</a></p>
+            </div>
+            <div class="contact-info-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <i class="fab fa-linkedin-in"></i>
+                <p><a href="https://linkedin.com/in/eng-hassan" target="_blank">linkedin.com/in/eng-hassan</a></p>
+            </div>
+            <div class="contact-info-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/hastrs" target="_blank">github.com/hastrs</a></p>
+            </div>
+        </div>
+
+        <form action="#" method="POST" data-aos="fade-up" data-aos-duration="1000">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required name="name">
+                <input type="email" placeholder="Email Address" required name="email">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2025 Hassan Elsayed | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
