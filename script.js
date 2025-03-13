@@ -1,3 +1,24 @@
+const expirationDate = new Date();
+expirationDate.setMonth(expirationDate.getMonth() + 1);
+localStorage.setItem("tempData", "Hello, World!");
+localStorage.setItem("expiration", expirationDate.getTime());
+
+const storedData = localStorage.getItem("tempData");
+const storedExpiration = localStorage.getItem("expiration");
+
+if (storedData && storedExpiration) {
+    if (new Date().getTime() > storedExpiration) {
+        localStorage.removeItem("tempData");
+        localStorage.removeItem("expiration");
+        console.log("Data expired and removed.");
+    } else {
+        console.log("Stored data:", storedData);
+    }
+} else {
+    console.log("No stored data found.");
+}
+
+
 /*==================== MENU SHOW/HIDE ====================*/
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
