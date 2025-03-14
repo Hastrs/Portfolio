@@ -76,6 +76,8 @@ header {
     align-items: center;
     z-index: 100;
     transition: 0.3s;
+    max-width: 100vw; 
+
 }
 
 header.sticky {
@@ -804,7 +806,7 @@ header.sticky {
 
 @media (max-width: 450px) {
     html {
-        font-size: 50%;
+        font-size: 67%;
     }
 
     .contact form .input-box input {
